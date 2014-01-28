@@ -1,8 +1,8 @@
 package shwetado.evaluator;
 
-public class AddOperator implements Operator{
+public class PowerOf implements Operator{
     @Override
     public double operate(Expression right, Expression left) {
-        return right.evaluate() + left.evaluate();
+        return Math.pow(right.evaluate(), left.evaluate());
     }
 }

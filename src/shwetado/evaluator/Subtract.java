@@ -1,8 +1,8 @@
 package shwetado.evaluator;
 
-public class MulOperator implements Operator{
+public class Subtract implements Operator{
     @Override
     public double operate(Expression right, Expression left) {
-        return right.evaluate() * left.evaluate();
+        return right.evaluate() - left.evaluate();
     }
 }
