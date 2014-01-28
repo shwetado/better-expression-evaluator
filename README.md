@@ -1,32 +1,20 @@
-Java Application Project Template
----------------------------------
+Expression - Evaluator
+====================
+This repository has implementation for evaluating mathematical expressions according to `BOD MAS`.
 
-You have just created a Java Application project. This project can be built and run using Gradle.
+#### How do you install?
+* Download the `.jar` and `.sh` files.
+* Then you can just run the shell file.
+* If you want to run expression-evaluator then then
+    `sh sd_evaluator.sh $expression`.
 
-What all has been already taken care for you:
-
-* A boilerplate `build.gradle`
-* Application plugin applied to run and generate distributable zip of your application
-* Generates a main class for you, just do a `gradle run`
-* Simpler directory structure
-* Easily generate IntelliJ Idea project files with `gradle idea`
-* Travis CI integration ready (a smart `.travis.yml` included)
-* Comprehensive `.gitignore` - so that unnecessary files don't get checked in. (generated if --with-git is used)
-* Uses jcenter (faster) maven repo
-
-You project looks like :
+##### expression-evaluator :
+* You need to give your expression in form of:
+        `operand operator operand` each separated by spaces!
+* It atleast needs one operator and two operands!
+* Evaluates the given expression.
+* For example: `2 + 3`
 
 ```
-  project/
-    |--+ src/            (put your Java source files here)
-    |--+ test/           (Java test files go here)
-    |--+ build.gradle    (build script)
-    |--+ .gitignore      (common ignore patterns already included)
-    |--+ .travis.yml     (travis configuration for continuous integration of your library)
+sd_evaluator.sh expression
 ```
-
-
-Notes:
-
-* A simpler directory structure is suitable for a app where you don't have webapp/resources etc.
-* Generate wrapper using `gradle wrapper`
